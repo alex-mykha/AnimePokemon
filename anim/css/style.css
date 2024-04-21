@@ -1,0 +1,219 @@
+.pokemon__item {
+  position: absolute;
+  top: 850px;
+  left: 650px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/pokemon.png);
+  background-size: contain;
+  animation: animate4 5s linear 4s infinite;
+  transform: scale(1);
+  z-index: 10;
+  display: block;
+}
+
+@keyframes animate4 {
+  0%, 100% {
+    top: 850px;
+    left: 650px;
+  }
+  25%, 75% {
+    top: 850px;
+    left: 550px;
+  }
+  50% {
+    top: 850px;
+    left: 700px;
+  }
+}
+.sun__item {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(255, 217, 0);
+  border-radius: 50%;
+  z-index: 100;
+}
+.sun__item:hover {
+  background-color: rgba(229, 255, 0, 0.9921568627);
+  animation: sun 6s linear infinite;
+  border-radius: 51% 49% 75% 25%/46% 45% 55% 54%;
+}
+.sun__eyes {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  height: 75px;
+  width: 75px;
+  background-image: url(../images/open-eyes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.sun__mouth {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  height: 75px;
+  width: 75px;
+  background-image: url(../images/mouth2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 112;
+}
+@keyframes sun {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes sun-walk {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.dragon__item {
+  position: absolute;
+  top: 20px;
+  left: 1550px;
+  height: 200px;
+  width: 200px;
+  background-image: url(../images/dragon.gif);
+  transform: scale(1);
+  z-index: 25;
+}
+
+.pikachu__item {
+  position: absolute;
+  top: 419px;
+  left: 500px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/Pikachu.png);
+  background-size: contain;
+  animation: animate1 4s linear 2s infinite;
+  transform: scale(1);
+  z-index: 30;
+}
+
+@keyframes animate1 {
+  0%, 100% {
+    top: 400px;
+    left: 500px;
+  }
+  25%, 75% {
+    top: 450px;
+    left: 550px;
+    transform: scale(1.2);
+  }
+  50% {
+    top: -p500px;
+    left: 450px;
+  }
+}
+.sandamer__item {
+  position: absolute;
+  top: 650px;
+  left: 1100px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/Sandamer.png);
+  background-size: contain;
+  animation: animate5 5Ps linear 3s infinite;
+  transform: scale(1);
+  z-index: 15;
+}
+
+@keyframes animate5 {
+  0%, 100% {
+    top: 650px;
+    left: 1100px;
+  }
+  25%, 75% {
+    top: 650px;
+    left: 1050px;
+    transform: scale(1.5);
+  }
+  50% {
+    top: 650px;
+    left: 1000px;
+  }
+}
+.schilok__item {
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/Schillok.png);
+  background-size: contain;
+  animation: animate 5s linear 7s infinite;
+  transform: scale(1);
+  z-index: 55;
+  background-repeat: no-repeat;
+}
+
+@keyframes animate {
+  0%, 100% {
+    top: 450px;
+    left: 600px;
+  }
+  25%, 75% {
+    top: 650px;
+    left: 600px;
+    transform: scale(1.5);
+  }
+  50% {
+    top: 700px;
+    left: 1050px;
+  }
+}
+.pika__item {
+  position: absolute;
+  top: 550px;
+  left: 250px;
+  height: 200px;
+  width: 200px;
+  background-image: url(../images/pika.gif);
+  background-size: contain;
+  transform: scale(1);
+  z-index: 40;
+}
+
+.charizard__item {
+  position: absolute;
+  top: 400px;
+  left: 1250px;
+  height: 450px;
+  width: 450px;
+  background-image: url(../images/dancing-charizard.gif);
+  transform: scale(1);
+  z-index: 25;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  background-color: rgb(48, 6, 6);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.wrapper .background {
+  height: 100vh;
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

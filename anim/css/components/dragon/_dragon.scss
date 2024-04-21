@@ -1,0 +1,14 @@
+.dragon {
+  &__item {
+    position: absolute;
+    top: 20px;
+    left: 1550px;
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/dragon.gif);
+    // background-size: contain;
+    transform: scale(1);
+    z-index: 25;
+}
+}
+

@@ -1,0 +1,21 @@
+@use "components";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    background-color: rgb(48, 6, 6);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .background {
+        height: 100vh;
+        width: 100vw;
+    }
+} 

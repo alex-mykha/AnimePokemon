@@ -1,0 +1,13 @@
+.charizard{
+  &__item {
+    position: absolute;
+    top: 400px;
+    left: 1250px;
+    height: 450px;
+    width: 450px;
+    background-image: url(../images/dancing-charizard.gif);
+    // background-size: contain;
+    transform: scale(1);
+    z-index: 25;
+}
+}

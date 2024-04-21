@@ -1,0 +1,34 @@
+.schilok {
+  &__item {
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/Schillok.png);
+  background-size: contain;
+  animation: animate 5s linear 7s infinite;
+  transform: scale(1);
+  z-index: 55;
+  background-repeat: no-repeat;
+}
+}
+
+@keyframes animate {
+0%, 100% {
+  top: 450px;
+  left: 600px;
+}
+
+25%, 75% {
+  top: 650px;
+  left: 600px;
+  transform: scale(1.5);
+}
+
+50% {
+  top: 700px;
+  left: 1050px;
+}
+
+}

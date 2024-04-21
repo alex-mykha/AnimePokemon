@@ -1,0 +1,63 @@
+.sun {
+    &__item {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        height: 150px;
+        width: 150px;
+        background-color: rgb(255, 217, 0);
+        border-radius: 50%;
+        z-index: 100;
+
+        &:hover {
+            background-color: #e5ff00fd;
+            animation: sun 6s linear infinite;
+            border-radius: 51% 49% 75% 25% / 46% 45% 55% 54% ;
+        }
+    }
+
+    &__eyes {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        height: 75px;
+        width: 75px;
+        background-image: url(../images/open-eyes.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 110;
+    }
+
+    &__mouth {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      height: 75px;
+      width: 75px;
+      background-image: url(../images/mouth2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 112;
+
+}
+
+@keyframes sun {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes sun-walk {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+  }
+}
